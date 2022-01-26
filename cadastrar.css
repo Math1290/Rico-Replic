@@ -1,0 +1,676 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, white, rgb(241, 239, 239));
+
+    font-size: 70%;
+}
+
+.cabeçalho{
+    background-color: #06025a;
+    height: 80px;
+    margin-left: -1em;
+    margin-right: -0.5em;
+    margin-top: -1em;
+    
+}
+
+
+.cabeçalho img{
+    width: 80px;
+    margin-left: 10em;
+    margin-top: 1.5em;
+}
+
+
+.pai-de-todos{
+    display: flex;
+    max-width: 1200px;
+
+   margin-left: 10em;
+}
+
+.parasomar .path2{
+    margin-top: 0;
+}
+.parasomar h1{
+   font-size: 3.7rem;
+   text-align: center;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#name{
+    
+    font-size: 1rem;
+    margin-top: 5em;
+    margin-left: -17em;
+    cursor: pointer;
+
+    border: 0;
+    border-bottom: 2px solid black;
+    color: black;
+    background-color: transparent;
+    outline: 0;
+}
+
+#name:hover{
+    border: 0;
+    border-bottom: 2px solid  orangered;
+}
+
+
+#btn{
+    margin-left: 1em;
+    cursor: pointer;
+    border: 0;
+
+    background-color: transparent;
+    text-align: left;
+    
+    border-bottom: 2px solid black;
+    transition: .9s ease;
+}
+
+#btn:hover{
+    border-bottom: 2px solid orangered;
+    text-align: left;
+    transition: .9s ease;
+
+}
+
+.name-idade{
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+    
+
+    border: 2px solid black;
+    margin-right: 1em;
+    width: 50vw;
+    border-radius: 15px;
+    height: 650px;
+
+}
+.slogan{
+   width: 500px;
+   margin-left: 2em;
+    margin-top: 1em;
+    height: 650px;
+    border: 2px solid black;
+    border-radius: 15px;
+
+    
+   
+}
+.parasomar svg{
+   
+    margin-top: 2.7em;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+
+   
+}
+
+.container{
+    font-size: 2rem; 
+    color: black;
+    animation: contai 1s ;
+
+    height: 2em;
+    transition: 1s;
+    margin-top: 2em;
+    margin-left: 1em;
+    text-align: left;
+}
+@keyframes contai {
+    from{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.erro{
+    color: red;
+    position: absolute;
+    margin-top: -3em;
+    margin-left: 1em;
+    font-size: 1rem;
+}
+
+/*Div escondida*/
+
+.pai{
+    margin-top: 3em;
+    width: 100% ;
+    max-width: 1200px;
+}
+
+
+
+
+#divescond{
+  display: flex;
+  flex-direction: column;
+  animation: dive 1.5s ease;
+
+  width: 200px;
+    margin-top: 5em;
+  
+}
+
+@keyframes dive{
+    from{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+#divescond ::-webkit-input-placeholder{
+    color: rgba(0, 0, 0, 0.37);
+}
+#divescond input #email1 #email2 #numero #senha{
+    margin-top: 1em;
+}
+
+ #divescond input {
+    margin-top: 4em;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: 0;
+    margin-left: 1em;
+    width: 500px;
+}
+
+#divescond input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+#enviar{
+  
+   margin-top: 3em;
+   height: 30px;
+   width: 80px;
+   cursor: pointer;
+   border: none;
+   color: white;
+   background-color: #ff5200;
+
+   font-size: 1rem;
+
+   margin-left: 15em;
+   border-radius: 14px;
+   transition: 1s;
+   
+}
+
+
+
+#enviar:hover{
+    
+    opacity: 0.4;
+    transition: 1s;
+    border: none;
+}
+
+
+
+
+
+@media(max-width:1200px){
+   
+    .name-idade {
+        margin-left: 2em;
+        
+    }
+    .name-idade #btn{
+        margin-left: 2em;
+    }
+    .name-idade #name{
+        margin-left: 2em;
+    }
+
+    #divescond input{
+        font-size: 1.2rem;
+        margin-top: 3em;
+        margin-top: 1em;
+       
+    }
+    #divescond #email1{
+        width: 400px;
+        height: 5em;
+    }
+    #divescond #email2{
+        width: 400px;
+        height: 5em;
+    }
+    #divescond #numero{
+        width: 400px;
+        height: 5em;
+    }
+    #divescond #senha{
+        width: 400px;
+        height: 5em;
+    }
+
+    .pergunta{
+        margin-top: 2em;
+    }
+    #btn{
+       font-size: 1.3rem;
+    }
+    
+    #container{
+        font-size: 1.3rem;
+        margin-top: 1em;
+     height: 0;
+    }
+    #erro{
+        font-size: 1.2rem;
+    }
+    #erro1{
+        font-size: 1.2rem;
+    }
+    #erro2{
+        font-size: 1.2rem;
+    }
+    #erro3{
+        font-size: 1.2rem;
+    }
+    #erro4{
+        font-size: 1.2rem;
+    }
+
+    #enviar{
+        margin-left: 13em;
+    }
+
+    .slogan .parasomar svg{
+        margin-top: 9.5em;
+    }
+}
+
+
+@media(max-width:1106px){
+   
+    .name-idade {
+        margin-left: 2em;
+        
+    }
+    .name-idade #btn{
+        margin-left: 2em;
+    }
+    .name-idade #name{
+        margin-left: 2em;
+    }
+
+    #divescond input{
+        font-size: 1.2rem;
+        margin-top: 10px;
+       
+    }
+    #divescond #email1{
+        width: 400px;
+    }
+    #divescond #email2{
+        width: 400px;
+    }
+    #divescond #numero{
+        width: 400px;
+    }
+    #divescond #senha{
+        width: 400px;
+    }
+
+    .pergunta{
+        margin-top: 2em;
+    }
+    #btn{
+       font-size: 1.3rem;
+    }
+    
+    #container{
+        font-size: 1.3rem;
+        margin-top: 1em;
+     height: 0;
+    }
+    #erro{
+        font-size: 1.2rem;
+    }
+    #erro1{
+        font-size: 1.2rem;
+    }
+    #erro2{
+        font-size: 1.2rem;
+    }
+    #erro3{
+        font-size: 1.2rem;
+    }
+    #erro4{
+        font-size: 1.2rem;
+    }
+
+    #enviar{
+        margin-left: 13em;
+    }
+
+    .slogan .parasomar svg{
+        margin-top: 2.8em;
+    }
+}
+
+
+@media(max-width:1000px){
+    .pai-de-todos{
+        flex-direction: column;
+        margin-left: 20em;
+    }
+
+    .name-idade {
+        margin-left: 2em;
+        
+    }
+    .name-idade #btn{
+        margin-left: 2em;
+    }
+    .name-idade #name{
+        margin-left: 2em;
+    }
+
+    #divescond input{
+        font-size: 1.2rem;
+        margin-top: 10px;
+       
+    }
+    #divescond #email1{
+        width: 400px;
+    }
+    #divescond #email2{
+        width: 400px;
+    }
+    #divescond #numero{
+        width: 400px;
+    }
+    #divescond #senha{
+        width: 400px;
+    }
+
+    .pergunta{
+        margin-top: 2em;
+    }
+    #btn{
+       font-size: 1.3rem;
+    }
+    
+    #container{
+        font-size: 1.3rem;
+        margin-top: 1em;
+     height: 0;
+    }
+    #erro{
+        font-size: 1.2rem;
+    }
+    #erro1{
+        font-size: 1.2rem;
+    }
+    #erro2{
+        font-size: 1.2rem;
+    }
+    #erro3{
+        font-size: 1.2rem;
+    }
+    #erro4{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 900px){
+    
+    .pai-de-todos{
+        flex-direction: column;
+        margin-left: 10em;
+    }
+
+    .name-idade {
+        margin-left: 2em;
+        
+    }
+    .name-idade #btn{
+        margin-left: 2em;
+    }
+    .name-idade #name{
+        margin-left: 10px;
+    }
+
+    #divescond input{
+        font-size: 1rem;
+        margin-top: 10px;
+       
+    }
+    #divescond #email1{
+        width: 300px;
+    }
+    #divescond #email2{
+        width: 300px;
+    }
+    #divescond #numero{
+        width: 300px;
+    }
+    #divescond #senha{
+        width: 300px;
+    }
+
+    .pergunta{
+        margin-top: 2em;
+    }
+
+
+    #btn{
+       font-size: 1rem;
+       margin-left: 0px;
+       
+    }
+    
+    #container{
+        font-size: 1rem;
+        margin-top: 1em;
+     height: 0;
+    }
+    #erro{
+        font-size: 1.2rem;
+    }
+    #erro1{
+        font-size: 1.2rem;
+    }
+    #erro2{
+        font-size: 1.2rem;
+    }
+    #erro3{
+        font-size: 1.2rem;
+    }
+    #erro4{
+        font-size: 1.2rem;
+    }
+
+    .slogan{
+        display: none;
+    }
+
+}
+
+@media(max-width: 664px){
+    
+    .pai-de-todos{
+        flex-direction: column;
+        margin-left: 10em;
+    }
+
+    .name-idade {
+        margin-left: 1em;
+        
+    }
+    
+
+    .name-idade #btn{
+        margin-left:0;
+    }
+    .name-idade #name{
+        margin-left: -10px;
+    }
+
+    #divescond input{
+        font-size: 1rem;
+        margin-top: 10px;
+       
+    }
+    #divescond #email1{
+        width: 200px;
+    }
+    #divescond #email2{
+        width: 200px;
+    }
+    #divescond #numero{
+        width: 200px;
+    }
+    #divescond #senha{
+        width: 200px;
+    }
+
+    .pergunta{
+        margin-top: 2em;
+    }
+
+
+    #btn{
+       font-size: 1rem;
+       margin-left: 0px;
+       
+    }
+    
+    #enviar{
+       margin-left: 5em;
+    }
+    #container{
+        font-size: 1rem;
+        margin-top: 1em;
+     height: 0;
+    }
+    #erro{
+        font-size: 1.2rem;
+    }
+    #erro1{
+        font-size: 1.2rem;
+    }
+    #erro2{
+        font-size: 1.2rem;
+    }
+    #erro3{
+        font-size: 1.2rem;
+    }
+    #erro4{
+        font-size: 1.2rem;
+    }
+
+    .slogan{
+        display: none;
+    }
+
+}
+
+    
+@media(max-width: 497px){
+    
+    .pai-de-todos{
+        flex-direction: column;
+        margin-left: 10em;
+        
+    }
+
+    .name-idade {
+        margin-left: 1em;
+     
+    }
+    
+
+    .name-idade #btn{
+        margin-left:0;
+    }
+    .name-idade #name{
+        margin-left: -10px;
+    }
+
+    #divescond input{
+        font-size: 1rem;
+        margin-top: 10px;
+       
+    }
+
+   
+    #divescond #email1{
+        width: 140px;
+    }
+    #divescond #email2{
+        width: 140px;
+    }
+    #divescond #numero{
+        width: 140px;
+    }
+    #divescond #senha{
+        width: 140px;
+    }
+
+    .pergunta{
+        margin-top: 2em;
+    }
+
+
+    #btn{
+       font-size: 1rem;
+       margin-left: 0px;
+       
+       
+    }
+    
+    #enviar{
+       margin-left: 3em;
+    }
+    #container{
+        font-size: 0.9rem;
+        margin-top: 1em;
+     height: 0;
+    }
+    #erro{
+        font-size: 0.5rem;
+        margin-top: 0em;
+    }
+    #erro1{
+        font-size: 0.5rem;
+    }
+    #erro2{
+        font-size: 0.5rem;
+    }
+    #erro3{
+        font-size: 0.5rem;
+    }
+    #erro4{
+        font-size: 0.5rem;
+    }
+
+    .slogan{
+        display: none;
+    }
+
+}
+
